@@ -2,8 +2,22 @@
   text-align: center;
 }
 
+.App-body {
+  text-align: left;
+  width: 50%;
+  padding-top: 25px;
+}
+
+.App-response {
+  padding-top: 25px;
+}
+
+.btn {
+  width: 100%;
+}
+
 .App-logo {
-  height: 5vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -15,7 +29,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 10vh;
+  min-height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
