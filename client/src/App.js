@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   callAPI(cep) {
-    if (cep !== null) {
+    if (cep) {
       fetch("http://localhost:9000/testAPI/" + cep)
         .then(res => res.json())
         .then(res => this.setState({
@@ -35,6 +35,8 @@ class App extends Component {
           bairro:  res.dados[0] ? res.dados[0].bairro : null,
         }))
         .catch(err => err);
+    } else {
+      this.setState({ mensagem: null });
     }
   }
 
