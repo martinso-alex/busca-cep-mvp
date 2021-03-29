@@ -2,7 +2,7 @@ var fetch = require('node-fetch');
 
 exports.busca_cep = function (req, res) {
   getDadosCEP(req.params.cep)
-    .then(dadosCEP => res.send(dadosCEP))
+    .then(dadosCEP => res.json(dadosCEP))
     .catch(err => err);
 };
 
