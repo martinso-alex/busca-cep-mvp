@@ -1,0 +1,25 @@
+{
+  "erro": false,
+  "mensagem": "DADOS ENCONTRADOS COM SUCESSO.",
+  "total": 1,
+  "dados": [
+    {
+      "uf": "SP",
+      "localidade": "Franca",
+      "locNu": "91441",
+      "localidadeSubordinada": "",
+      "logradouroDNEC": "Rua Arnulpho de Lima",
+      "logradouroTextoAdicional": "",
+      "logradouroTexto": "",
+      "bairro": "Vila Santa Cruz",
+      "baiNu": "",
+      "nomeUnidade": "",
+      "cep": "14403471",
+      "tipoCep": "2",
+      "numeroLocalidade": "91441",
+      "situacao": "",
+      "faixasCaixaPostal": [],
+      "faixasCep": []
+    }
+  ]
+}
