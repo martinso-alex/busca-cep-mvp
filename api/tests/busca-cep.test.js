@@ -48,6 +48,9 @@ test("Teste com o CEP da sede do Magazine Luiza", () => {
     });
 });
 
+const response2Mock = require('../data/response-2-mock.json');
+fetch.mockResponse(response2Mock);
+
 test("Teste com o CEP inválido", () => {
   return request(app)
     .get("/busca-cep/abcdefghijklmnopq")
