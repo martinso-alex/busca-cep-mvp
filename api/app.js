@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var testAPIRouter = require('./routes/testAPI');
 var buscaCEPRouter = require('./routes/busca-cep');
+var getAccessTokenRouter = require('./routes/get-access-token');
 
 var app = express();
 
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/testAPI', testAPIRouter);
 app.use('/busca-cep', buscaCEPRouter);
+app.use('/get-access-token', getAccessTokenRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
