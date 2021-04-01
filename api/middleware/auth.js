@@ -29,23 +29,3 @@ exports.authenticate_token = function (req, res, next) {
       res.sendStatus(401);
   }
 }
-/*
-exports.get_access_token = function (req, res, next) {
-  const password = req.params.password ;
-
-  if (password) {
-      const token = authHeader.split(' ')[1];
-
-      jwt.verify(token, accessTokenSecret, (err, user) => {
-          if (err) {
-              return res.sendStatus(403);
-          }
-
-          req.user = user;
-          next();
-      });
-  } else {
-      res.sendStatus(401);
-  }
-}
-*/

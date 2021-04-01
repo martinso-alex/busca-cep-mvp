@@ -1,0 +1,20 @@
+{
+  "definition": {
+    "openapi": "3.0.0",
+    "info": {
+      "title": "API BuscaCep - Swagger",
+      "version": "1.0.0",
+      "description": "Esse é um serviço que expõe dados de endereço de acordo com o CEP informado",
+      "contact": {
+        "name": "Alexandre Martins",
+        "url": "https://github.com/martinso-alex/busca-cep-mvp"
+      }
+    },
+    "servers": [
+      {
+        "url": "http://localhost:9000"
+      }
+    ]
+  },
+  "apis": ["./routes/*.js"]
+}
