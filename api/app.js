@@ -6,6 +6,7 @@ var logger = require('morgan');
 var cors = require("cors");
 var swaggerJsdoc = require("swagger-jsdoc");
 var swaggerUi = require("swagger-ui-express");
+const promMid = require('express-prometheus-middleware');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -28,6 +29,12 @@ app.use(
   swaggerUi.serve,
   swaggerUi.setup(specs, { explorer: true })
 );
+
+app.use(promMid({
+  metricsPath: '/metrics',
+  collectDefaultMetrics: true,
+  requestDurationBuckets: [0.1, 0.5, 1, 1.5],
+}));
 
 app.use(cors());
 app.use(logger('dev'));
